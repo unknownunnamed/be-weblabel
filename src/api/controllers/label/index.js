@@ -1,13 +1,11 @@
 const add = require('./add');
-const get = require('./get');
-const getById = require('./getById');
 const update = require('./update');
+const addManyLabel = require('./addManyLabel');
 
 const label = {
     add,
-    get,
-    getById,
     update,
-};
+    addManyLabel,
+}
 
 module.exports = label;

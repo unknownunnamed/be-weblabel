@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const fileUpload = require("express-fileupload");
 const api = require("./api/routes/api.js");
 
 const app = express();
@@ -11,6 +12,10 @@ app.use(
 );
 
 app.use(cors());
+
+app.use(fileUpload({ 
+  createParentPath: true 
+}));
 
 app.use(
   express.urlencoded({
