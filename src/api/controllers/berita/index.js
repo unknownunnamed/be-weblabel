@@ -5,6 +5,7 @@ const get = require('./get');
 const getWithCountLabel = require('./getWithLabelCount')
 const getById = require('./getById');
 const update = require('./update');
+const getWithLabel = require('./getWithLabel');
 
 const berita = {
     add,
@@ -14,6 +15,7 @@ const berita = {
     getWithCountLabel,
     getById,
     update,
+    getWithLabel,
 };
 
 module.exports = berita;
